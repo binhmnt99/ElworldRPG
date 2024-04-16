@@ -1,0 +1,17 @@
+{
+    "name": "Inventory",
+    "rootNamespace": "Scripts.Inventory",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:fbddb69f35acd98459ed291b02f08521"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

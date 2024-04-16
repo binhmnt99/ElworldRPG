@@ -1,0 +1,17 @@
+{
+    "name": "Entity",
+    "rootNamespace": "Scripts.Entity",
+    "references": [
+        "Unity.InputSystem",
+        "Inputs.PlayerController"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
