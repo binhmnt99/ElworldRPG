@@ -1,0 +1,4 @@
+repository "ElworldRPG@BinMNT@cloud"
+  path "/"
+    br "/main"
+    co "/main"
