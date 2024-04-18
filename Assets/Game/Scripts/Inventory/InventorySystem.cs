@@ -25,7 +25,7 @@ namespace Scripts.Inventory
             }
         }
 
-        public bool AddToInventory(ItemData itemToAdd, int amountToAdd)
+        public bool AddToInventory(ItemDetailSO itemToAdd, int amountToAdd)
         {
             if (ContainsItem(itemToAdd, out List<InventorySlot> inventorySlotList)) //Check Item exist in inventory
             {
@@ -49,7 +49,7 @@ namespace Scripts.Inventory
             return false;
         }
 
-        public bool ContainsItem(ItemData itemToAdd, out List<InventorySlot> inventorySlot)
+        public bool ContainsItem(ItemDetailSO itemToAdd, out List<InventorySlot> inventorySlot)
         {
             inventorySlot = inventorySlotList.Where(i => i.GetItemData == itemToAdd).ToList();
             Debug.Log(inventorySlot.Count);

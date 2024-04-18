@@ -6,13 +6,13 @@ namespace Scripts.Inventory
     [Serializable]
     public class InventorySlot
     {
-        [SerializeField] private ItemData itemData;
+        [SerializeField] private ItemDetailSO itemData;
         [SerializeField] private int stackSize;
 
-        public ItemData GetItemData => itemData;
+        public ItemDetailSO GetItemData => itemData;
         public int GetStackSize => stackSize;
 
-        public InventorySlot(ItemData item, int amount)
+        public InventorySlot(ItemDetailSO item, int amount)
         {
             itemData = item;
             stackSize = amount;
@@ -39,7 +39,7 @@ namespace Scripts.Inventory
             stackSize -= amount;
         }
 
-        public void UpdateInventorySlot(ItemData itemData, int amount)
+        public void UpdateInventorySlot(ItemDetailSO itemData, int amount)
         {
             this.itemData = itemData;
             stackSize = amount;

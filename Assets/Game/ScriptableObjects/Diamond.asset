@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf3fa29ac2b512341973586bb51e85d1, type: 3}
-  m_Name: Coin
+  m_Name: Diamond
   m_EditorClassIdentifier: 
   Id:
-    Part1: 3192340268
-    Part2: 1277955262
-    Part3: 2769579936
-    Part4: 1344856280
-  DisplayId: be473f2c-0cbe-4c2c-a06f-14a5d8e02850
-  DisplayName: Coin
-  Description: Money you will get
+    Part1: 553125696
+    Part2: 1088765021
+    Part3: 1294094494
+    Part4: 1005515962
+  DisplayId: 
+  DisplayName: 
+  Description: 
   Icon: {fileID: 0}
-  MaxStackSize: 1
+  MaxStackSize: 0

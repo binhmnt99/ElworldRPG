@@ -10,10 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf3fa29ac2b512341973586bb51e85d1, type: 3}
-  m_Name: Coin 1
+  m_Name: Gem
   m_EditorClassIdentifier: 
-  Id: 1
-  DisplayName: Coin 1
+  Id:
+    Part1: 3241523456
+    Part2: 1335343030
+    Part3: 3302386083
+    Part4: 4102414159
+  DisplayId: c135b900-b7b6-4f97-a369-d6c44fdf85f4
+  DisplayName: Gem
   Description: Money you will get
-  Icon: {fileID: 21300000, guid: bcc320beb36178244b6dea080f90b986, type: 3}
-  MaxStackSize: 1
+  Icon: {fileID: 0}
+  MaxStackSize: 2

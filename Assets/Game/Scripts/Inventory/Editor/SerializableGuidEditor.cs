@@ -6,9 +6,9 @@ namespace Scripts.Inventory
 {
 
     [CustomEditor(typeof(SerializableGuid))]
-    public class SerializableGuidEditor : PropertyDrawer
+    public class SerializableGuidEditor : Editor
     {
-        public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+        public void OnInspectorGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUI.BeginProperty(position, label, property);
 

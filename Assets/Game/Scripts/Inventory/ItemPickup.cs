@@ -8,7 +8,7 @@ namespace Scripts.Inventory
     public class ItemPickup : MonoBehaviour
     {
         public float PickupRadius;
-        public ItemData ItemData;
+        public ItemDetailSO ItemData;
         private SphereCollider sphereCollider;
 
         private void Awake() {
