@@ -11,8 +11,8 @@ namespace Scripts.Inventory
     {
         [SerializeField] private List<InventorySlot> inventorySlotList;
 
-        public List<InventorySlot> GetInventorySlotList => inventorySlotList;
-        public int GetInventorySize => GetInventorySlotList.Count;
+        public List<InventorySlot> InventorySlotList => inventorySlotList;
+        public int InventorySize => InventorySlotList.Count;
 
         public UnityAction<InventorySlot> OnInventorySlotChanged;
 
@@ -51,14 +51,14 @@ namespace Scripts.Inventory
 
         public bool ContainsItem(ItemDetailSO itemToAdd, out List<InventorySlot> inventorySlot)
         {
-            inventorySlot = inventorySlotList.Where(i => i.GetItemData == itemToAdd).ToList();
+            inventorySlot = inventorySlotList.Where(i => i.ItemData == itemToAdd).ToList();
             Debug.Log(inventorySlot.Count);
             return inventorySlot != null;
         }
 
         public bool HasFreeSlot(out InventorySlot freeSlot)
         {
-            freeSlot = inventorySlotList.FirstOrDefault(i => i.GetItemData == null);
+            freeSlot = inventorySlotList.FirstOrDefault(i => i.ItemData == null);
             return freeSlot != null;
         }
     }

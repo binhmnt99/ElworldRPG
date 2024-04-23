@@ -9,8 +9,8 @@ namespace Scripts.Inventory
         [SerializeField] private ItemDetailSO itemData;
         [SerializeField] private int stackSize;
 
-        public ItemDetailSO GetItemData => itemData;
-        public int GetStackSize => stackSize;
+        public ItemDetailSO ItemData => itemData;
+        public int StackSize => stackSize;
 
         public InventorySlot(ItemDetailSO item, int amount)
         {
