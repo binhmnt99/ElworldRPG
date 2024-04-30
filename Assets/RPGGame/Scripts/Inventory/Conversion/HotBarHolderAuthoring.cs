@@ -7,18 +7,18 @@ namespace RPG.Inventory
     using UnityEngine;
     
     [Serializable]
-    public class HotBarHolderAuthoring : MonoBehaviour
+    public class HotBarSizeAuthoring : MonoBehaviour
     {
         public int Size;
 
-        public class InventoryHolderBaker : Baker<HotBarHolderAuthoring>
+        public class HotBarSizeBaker : Baker<HotBarSizeAuthoring>
         {
-            public override void Bake(HotBarHolderAuthoring authoring)
+            public override void Bake(HotBarSizeAuthoring authoring)
             {
                 Entity entity = GetEntity(TransformUsageFlags.None);
 
-                AddComponentObject(entity, new HotBar{
-                    InventorySize = authoring.Size,
+                AddComponent(entity, new HotBarSize{
+                    Size = authoring.Size,
                 });
             }
         }

@@ -11,30 +11,29 @@ namespace RPG.Inventory
     using UnityEngine;
     using UnityEngine.Events;
 
+    // [Serializable]
+    // public struct BackPack : IComponentData
+    // {
+    //     public int InventorySize;
+    //     public NativeList<ItemSlot> ItemSlots;
+    // }
+
     [Serializable]
-    public class BackPack : IComponentData
+    public struct HotBarSize : IComponentData
     {
-        public int InventorySize;
-        public List<ItemSlot> ItemSlots;
+        public int Size;
+        //public DynamicBuffer<ItemSlotBufferElement> DynamicBufferItemSlots;
     }
 
     [Serializable]
-    public class HotBar : IComponentData
-    {
-        public int InventorySize;
-        public List<ItemSlot> ItemSlots;
-    }
-
-    [Serializable]
-    public struct ItemSlot
+    public struct ItemSlotBufferElement : IBufferElementData
     {
         public ItemData ItemData;
         public int StackSize;
 
-
     }
 
-    //[Serializable]
+    [Serializable]
     public struct ItemData
     {
         public FixedString64Bytes ItemID;
