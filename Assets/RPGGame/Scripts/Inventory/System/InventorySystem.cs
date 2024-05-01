@@ -8,36 +8,6 @@ namespace RPG.Inventory
     using RPG.Player;
     using System.Linq;
 
-    // public partial class InventorySystem : SystemBase
-    // {
-    //     Entity playerEntity;
-    //     HotBar hotBar;
-
-    //     protected override void OnCreate()
-    //     {
-    //         //RequireForUpdate<HotBar>();
-    //     }
-
-    //     protected override void OnUpdate()
-    //     {
-    //         playerEntity = SystemAPI.GetSingletonEntity<PlayerTag>();
-    //         CreateHotBar();
-
-    //     }
-
-    //     private void CreateHotBar()
-    //     {
-    //         if (hotBar.InventorySize <= 0)
-    //         {
-    //             Debug.Log("ItemSlots is Empty");
-    //             hotBar = EntityManager.GetComponentData<HotBar>(playerEntity);
-
-
-    //         }
-    //     }
-    // }
-
-
     public partial struct InventorySystem : ISystem
     {
         private EntityManager entityManager;
@@ -45,6 +15,7 @@ namespace RPG.Inventory
         private HotBarSize hotBarSizeComponent;
         public void OnCreate(ref SystemState state)
         {
+            state.RequireForUpdate<HotBarSize>();
             entityManager = state.EntityManager;
         }
         public void OnUpdate(ref SystemState state)
