@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/RPGGame/Scenes/InitScene/MainMenuScene.unity
-    guid: 393de654eaf045245b8437e48c44d800
+    path: Assets/RPGGame/Scenes/CommonScene/AuthenticationScene.unity
+    guid: 99553e6810d63cb40aa4ac4ed2367773
+  - enabled: 1
+    path: Assets/RPGGame/Scenes/CommonScene/MenuScene.unity
+    guid: 6de98d321a9fd5646ad5c6ac16defac2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 1b43012640debcd46ae2713104d77745,
       type: 3}
